@@ -1,5 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+header{
+    background-color: #bc80bc;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 500px;
+    margin: 0px auto;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.logo h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+header p{
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+nav{
+    background-color: #559b55;
+    display: flex;
+    justify-content: center;
+}
+
+.navIten{
+    background-color: #559b55;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+.navIten:hover{
+    background-color: #205e20;
+    transition: .15s linear;
+}
+
 main{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1000px;
     margin: 0px auto;
+}
+
+.imgIntro{
+    background: url('../imagens/img_intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+}
+
+p.txtIntro{
+    background-color: #ffffffa5;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    width: 400px;
+    height: min-content;
+}
+
+.txtCard1{
+    display: flex;
+}
+
+footer{
+    background-color: black;
+    color: white;
 }
