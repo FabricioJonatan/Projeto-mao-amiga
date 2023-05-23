@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+body{
+    background-color: #1e291e;
+}
+
 header{
     background-color: #bc80bc;
     text-align: center;
@@ -31,6 +35,8 @@ nav{
     background-color: #559b55;
     display: flex;
     justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 1px 3px #0000009a;
 }
 
 .navIten{
@@ -48,6 +54,7 @@ nav{
 }
 
 main{
+    background-color: #e8e8e8;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1000px;
     margin: 0px auto;
@@ -58,7 +65,11 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    display: flex;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 2px 3px #0000009a;
 }
 
 p.txtIntro{
@@ -70,13 +81,175 @@ p.txtIntro{
     font-size: 20px;
     width: 400px;
     height: min-content;
+    border-radius: 15px;
 }
 
 .txtCard1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin: 25px 0px;
+    gap: 25px;
+}
+
+.txt,
+.txtDonate{
+    background-color: #27272741;
+    color: #121212;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+div.txt{
+    text-align: justify;
+    width: 470px;
+    
+}
+
+.txtCard1 img{
+    width: 470px;
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Lato', sans-serif;
+    background-color: #559b55;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+.goalList{
+    justify-content: space-around;
+}
+
+.goal{
+    background-color: #bc80bc;
+    color: #121212;
+    width: 310px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px #0000009a;
+}
+
+.goal strong{
+    font-size: 18px;
+}
+
+.video{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.imgtxt{
+    background: url('../imagens/img_intro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 930px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px #0000009a;
+}
+
+p.txt{
+    background-color: #ffffffa5;
+    color: black;
+    font-size: 20px;
+    width: 85%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.donate{
+    background-color: #559b55;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto 0px auto;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.donate img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+.txtDonate{
+    background-color: #bc80bc;
+    color: #121212;
+    text-align: center;
+    width: 450px;
+}
+
+.donate a{
+    background-color: #301930;
+    color: #7dd37d;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 12px;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+.donate a:hover{
+    background-color: #7dd37d;
+    color: #301930;
 }
 
 footer{
-    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: italic;
     color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+footer h3{
+    margin-bottom: 15px;
+}
+
+.contactList{
+    width: 500px;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.contactList li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px
+}
+
+li a:hover{
+    color: white;
+    background-color: rgb(49, 49, 49);
+}
+
+footer img{
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
 }
